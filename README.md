@@ -8,21 +8,29 @@
 
 ### 1. Keycloak を起動（Docker）
 cd keycloak-docker
+
 docker-compose up -d
+
 管理画面: http://localhost:8080
 
 初期ユーザー: admin / admin（docker-compose.yml に設定）
 
 ### 2. Express API サーバーを起動
 cd ../server
+
 npm install
+
 node index.js
+
 サーバー起動: http://localhost:4000
 
 ### 3. React クライアントを起動（Vite）
 cd ../client
+
 npm install
+
 npm run dev -- --port 3000
+
 アプリURL: http://localhost:3000
 
 ## 🔐 Keycloak 設定手順（手動）
